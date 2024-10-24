@@ -29,7 +29,7 @@ export default function SocialProfiles() {
               src={profile.icon}
               width={30}
               height={30}
-              alt={profile.icon.split("/")[1].split(".")[0]}
+              alt={profile.name}
               className="cursor-pointer" />
           </Link>
         ))
