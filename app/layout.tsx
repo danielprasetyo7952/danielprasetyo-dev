@@ -28,7 +28,7 @@ export default function RootLayout({
         </div>
         <div className="fixed top-1/2 transform -translate-y-1/2 z-20 left-0 ml-5 flex flex-col justify-center items-center gap-2 max-sm:hidden">
           <SocialProfiles type="vertical" exclude={["Discord"]}/>
-          <div className=' h-80 w-[1px] rounded-sm bg-white'>
+          <div className="h-80 w-[1px] rounded-sm bg-white">
           </div>
         </div>
         {children}
