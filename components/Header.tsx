@@ -50,7 +50,7 @@ export default function Header() {
                 navItems.map((item, index) => {
                   return (
                     <li key={index}>
-                      <Link href={item.url} className={`block py-2 px-3 text-white bg-transparent md:p-0 hover:opacity-60 ${item.url === pathname ? 'text-primary' : ''}`}>
+                      <Link href={item.url} className={`block py-2 px-3 bg-transparent md:p-0 hover:opacity-60 ${item.url === pathname ? 'text-primary' : 'text-white'}`}>
                         <span className='text-primary'>\/</span> {item.name}
                       </Link>
                     </li>
