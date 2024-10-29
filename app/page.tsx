@@ -21,10 +21,9 @@ export default function Home() {
         <div>
           <Image
             src={"/avatar.png"}
-            width={300}
-            height={300}
-            alt="Avatar"
-            className="w-[400px] h-[400px] md:w-[500px] md:h-[500px]"/>
+            width={400}
+            height={400}
+            alt="Avatar"/>
           <p className="border p-1 text-center text-sm">
             Currently working at <span className="font-extrabold text-primary">PT. Inti Dunia Sukses</span>
           </p>

@@ -25,7 +25,7 @@ const socialProfiles = [
   },
   {
     name: "Discord",
-    url: "",
+    url: "https://discordapp.com/users/690896840832450561",
     icon: "/icons/discord.svg",
   }
 ]
