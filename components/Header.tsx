@@ -35,7 +35,7 @@ export default function Header() {
               height={30}
               alt="logo"
             /></Link>
-            <Link href={"/"}><h1 className='ml-3 font-bold text-white'>DPrasetyo</h1></Link>
+            <Link href={"/"}><h1 className='ml-3 font-bold'>DPrasetyo</h1></Link>
           </div>
           <button onClick={handleDrawer} type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
@@ -49,7 +49,7 @@ export default function Header() {
                 navItems.map((item, index) => {
                   return (
                     <li key={index}>
-                      <Link href={item.url} className={`block py-2 px-3 bg-transparent md:p-0 hover:opacity-60 ${item.url === pathname ? 'text-primary' : 'text-white'}`}>
+                      <Link href={item.url} className={`block py-2 px-3 bg-transparent md:p-0 hover:opacity-60 ${item.url === pathname ? 'text-primary' : 'text-foreground'}`}>
                         <span className='text-primary'>\/</span> {item.name}
                       </Link>
                     </li>
@@ -64,7 +64,7 @@ export default function Header() {
       <div id="drawer-navigation" className="fixed top-0 left-0 right-0 z-40 h-screen w-full p-4 transition-transform -translate-y-full bg-gray-800 flex flex-col justify-between" aria-labelledby="drawer-navigation-label">
         <div>
           <h5 id="drawer-navigation-label" className="text-base font-semibold text-gray-500 uppercase">Menu</h5>
-          <button onClick={handleDrawer} type="button" aria-controls="drawer-navigation" className="text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center hover:bg-gray-600 hover:text-white" >
+          <button onClick={handleDrawer} type="button" aria-controls="drawer-navigation" className="text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center hover:bg-gray-600 hover:text-foreground" >
             <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
             </svg>
@@ -76,7 +76,7 @@ export default function Header() {
                 navItems.map((item, index) => {
                   return (
                     <li key={index}>
-                      <Link href={item.url} className={`flex items-center p-2 hover:bg-gray-700 group ${item.url === pathname ? 'text-primary' : 'text-white'}`}>
+                      <Link href={item.url} className={`flex items-center p-2 hover:bg-gray-700 group ${item.url === pathname ? 'text-primary' : 'text-foreground'}`}>
                         <span className="text-primary pr-4">\/</span>{item.name}
                       </Link>
                     </li>

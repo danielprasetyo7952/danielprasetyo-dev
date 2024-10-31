@@ -15,7 +15,7 @@ export default function Footer() {
               width={30}
               height={30} 
               className="inline-block mr-1"/>
-            DPrasetyo <span className="text-gray-500">danielbudip789077@gmail.com</span>
+            DPrasetyo <span className="text-gray-400">danielbudip789077@gmail.com</span>
           </h5>
           <h5 className="text-md">
             Fullstack Web App Developer
@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-center my-8">
-        @ Copyright 2024. Made by Daniel Budi Prasetyo
+        &copy; 2024 Daniel Budi Prasetyo. All rights reserved.
       </p>
     </footer>
   )
