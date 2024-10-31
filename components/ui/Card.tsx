@@ -13,7 +13,7 @@ type Props = {
 }
 
 export default function Card({
-    image = "",
+    image = "/cover.jpg",
     title,
     description,
     repoLink = "",
