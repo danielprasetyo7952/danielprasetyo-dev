@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <>
       <nav className="bg-background fixed w-full z-20 top-0 start-0">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl 2xl:max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <Link href={"/"}><Image
               src="/logo.png"
