@@ -8,32 +8,25 @@ import SectionHeader from "@/components/ui/SectionHeader";
 
 const projects = [
   {
-    title: "Project 1",
-    description: "Description 1",
-    image: "/cover.jpg",
-    repoLink: "",
+    title: "BDC Competition",
+    description: "An archive of data and notebook from the BDC Competition.",
+    image: "/project/satria-data.png",
+    repoLink: "https://github.com/danielprasetyo7952/satria-data-2023",
     liveLink: ""
   },
   {
-    title: "Project 2",
-    description: "Description 2",
-    image: "/cover.jpg",
-    repoLink: "",
-    liveLink: ""
+    title: "E-Waste Classification",
+    description: "A machine learning model that classifies images of electronic waste into 15 categories.",
+    image: "/project/techwaste.png",
+    repoLink: "https://github.com/Techwaste/develop-model",
+    liveLink: "https://techwas-ml-preview.streamlit.app/"
   },
   {
-    title: "Project 3",
-    description: "Description 3",
-    image: "/cover.jpg",
-    repoLink: "",
-    liveLink: ""
-  },
-  {
-    title: "Project 4",
-    description: "Description 4",
-    image: "/cover.jpg",
-    repoLink: "",
-    liveLink: "/"
+    title: "Forex Forecasting",
+    description: "A machine learning model that predicts the future price of a currency pair based on historical data.",
+    image: "/project/forex-forecasting.png",
+    repoLink: "https://github.com/danielprasetyo7952/Tugas-Akhir",
+    liveLink: "https://tugas-akhir-preview.streamlit.app/"
   }
 ]
 
@@ -75,7 +68,7 @@ export default function Home() {
         </blockquote>
         <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
           <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-700">
-            <cite className="text-sm text-gray-400">Daniel Budi Prasetyo</cite>
+            <cite className="text-sm text-gray-400">Cory House</cite>
           </div>
         </figcaption>
       </figure>
@@ -88,7 +81,7 @@ export default function Home() {
           </Link>
         </SectionHeader>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-4">
+        <div className="flex grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-evenly gap-4">
           {
             projects.map((project, index) => (
               <Card
