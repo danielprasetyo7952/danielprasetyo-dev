@@ -3,7 +3,7 @@ import Link from "next/link"
 
 type Props = {
   type?: "horizontal" | "vertical"
-  iconSize?: number,
+  iconSize?: number
   exclude?: string[]
 }
 
