@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-center my-8">
-        &copy; 2024 Daniel Budi Prasetyo. All rights reserved.
+        &copy; 2024 DPrasetyo. All rights reserved.
       </p>
     </footer>
   )
