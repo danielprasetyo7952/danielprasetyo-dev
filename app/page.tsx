@@ -5,7 +5,9 @@ import Link from "next/link";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import SectionHeader from "@/components/ui/SectionHeader";
+import Skills from "@/components/Skills";
 import SocialProfiles from "@/components/SocialProfiles";
+// import Timeline from "@/components/Timeline";
 import Quotes from "@/components/ui/Quotes";
 
 const projects = [
@@ -91,11 +93,21 @@ export default function Home() {
       {/* Skills */}
       <section>
         <SectionHeader title="Skills" />
+        <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center items-center">
+          <Image
+            src={"/abstract.png"}
+            width={600}
+            height={600}
+            alt="Skills"
+            className="hidden lg:inline-block lg:w-[500px] lg:h-auto" />
+          <Skills />
+        </div>
       </section>
 
       {/* Experience */}
       <section>
         <SectionHeader title="Experience" />
+        {/* <Timeline /> */}
       </section>
 
       {/* Contact */}
