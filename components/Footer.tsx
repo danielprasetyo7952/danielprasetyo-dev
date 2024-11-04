@@ -29,7 +29,7 @@ export default function Footer() {
           <SocialProfiles exclude={["Email"]} />
         </div>
       </div>
-      <p className="text-center my-8">
+      <p className="text-center my-8 text-sm">
         &copy; 2024 DPrasetyo. All rights reserved.
       </p>
     </footer>
