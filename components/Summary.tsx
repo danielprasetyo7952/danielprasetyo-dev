@@ -6,7 +6,7 @@ import Button from "./ui/Button"
 
 export default function Summary() {
     return (
-        <div className="grid grid-col-1 md:grid-cols-2 justify-items-end gap-4">
+        <div className="grid grid-col-1 md:grid-cols-2 justify-items-center md:justify-items-end gap-4">
             <div className="flex flex-col justify-center gap-8">
                 <h2 className="text-2xl">
                     Daniel Budi Prasetyo, <span className="text-primary">Fullstack Developer</span> and <span className="text-primary">Machine Learning Developer</span>

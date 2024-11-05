@@ -61,7 +61,7 @@ export default function Header() {
         </div>
       </nav>
 
-      <div id="drawer-navigation" className="fixed top-0 left-0 right-0 z-40 h-screen w-full p-4 transition-transform -translate-y-full bg-gray-800 flex flex-col justify-between" aria-labelledby="drawer-navigation-label">
+      <div id="drawer-navigation" className="fixed top-0 left-0 right-0 z-40 h-screen w-full p-4 transition-transform -translate-y-full bg-background flex flex-col justify-between" aria-labelledby="drawer-navigation-label">
         <div>
           <h5 id="drawer-navigation-label" className="text-base font-semibold text-gray-500 uppercase">Menu</h5>
           <button onClick={handleDrawer} type="button" aria-controls="drawer-navigation" className="text-gray-400 bg-transparent rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center hover:bg-gray-600 hover:text-foreground" >
