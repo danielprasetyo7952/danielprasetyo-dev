@@ -4,15 +4,15 @@ import Link from "next/link";
 {/* Components */ }
 import Button from "@/components/ui/Button";
 import Contacts from "@/components/Contacts";
-import SectionHeader from "@/components/ui/SectionHeader";
-import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Quotes from "@/components/ui/Quotes";
-// import Timeline from "@/components/Timeline";
+import SectionHeader from "@/components/ui/SectionHeader";
+import Skills from "@/components/Skills";
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
-    <main className="my-28 px-4 md:mx-auto max-w-screen-xl 2xl:max-w-screen-2xl flex flex-col justify-center gap-12">
+    <>
       {/* Introduction */}
       <div className="grid grid-col-1 md:grid-cols-2 justify-items-center gap-4">
         <div className="flex flex-col gap-8">
@@ -70,7 +70,7 @@ export default function Home() {
       {/* Experience */}
       <section>
         <SectionHeader title="Experience" />
-        {/* <Timeline /> */}
+        <Timeline />
       </section>
 
       {/* Contact */}
@@ -78,6 +78,6 @@ export default function Home() {
         <SectionHeader title="Contact" />
         <Contacts />
       </section>
-    </main>
+    </>
   );
 }
