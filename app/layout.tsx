@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
 
-{/* Components */}
+{/* Components */ }
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SocialProfiles from "@/components/SocialProfiles";
@@ -27,11 +27,13 @@ export default function RootLayout({
           <Header />
         </div>
         <div className="fixed top-1/2 transform -translate-y-1/2 z-20 left-0 ml-5 flex flex-col justify-center items-center gap-2 max-xl:hidden 2xl:max-2xl:hidden">
-          <SocialProfiles type="vertical" exclude={["Discord"]}/>
+          <SocialProfiles type="vertical" exclude={["Discord"]} />
           <div className="h-80 w-[1px] rounded-sm bg-white">
           </div>
         </div>
-        {children}
+        <main className="my-28 px-4 md:mx-auto max-w-screen-xl 2xl:max-w-screen-2xl flex flex-col justify-center gap-12">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
