@@ -34,9 +34,9 @@ export default function Timeline() {
                             <div className="hidden md:flex w-full h-0.5 bg-gray-700"></div>
                         </div>
                         <div className="mt-3 sm:pe-8">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{experience.title}</h3>
-                            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{experience.date} at <span className="font-bold">{experience.company}</span></time>
-                            <p className="text-base font-normal text-gray-500 dark:text-gray-400">{experience.description}</p>
+                            <h3 className="text-lg font-semibold">{experience.title}</h3>
+                            <time className="block mb-2 text-sm font-normal leading-none text-gray-500">{experience.date} at <span className="font-bold">{experience.company}</span></time>
+                            <p className="text-base font-normal text-gray-400">{experience.description}</p>
                         </div>
                     </li>
                 ))
