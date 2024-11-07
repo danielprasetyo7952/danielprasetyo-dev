@@ -12,12 +12,12 @@ const skills = [
         skills: ['MySQL']
     },
     {
-        title: 'Version Control',
-        skills: ['Git']
-    },
-    {
         title: 'API',
         skills: ['FastAPI']
+    },
+    {
+        title: 'Version Control',
+        skills: ['Git']
     },
     {
         title: 'Machine Learning',
@@ -27,18 +27,22 @@ const skills = [
 
 export default function Skills() {
     return (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 col-span-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 col-span-2 gap-4">
             {
                 skills.map((skill, index) => (
-                    <div key={index} className="flex flex-col gap-2 border m-auto">
-                        <h3 className="text-lg bg-slate-600 p-5">{skill.title}</h3>
-                        <ul className="list-disc list-inside p-5">
-                            {
-                                skill.skills.map((s, i) => (
-                                    <li key={i}>{s}</li>
-                                ))
-                            }
-                        </ul>
+                    <div className="border border-foreground my-auto min-w-80 sm:min-w-64 md:min-w-56" key={index}>
+                        <div className="">
+                            <p className="text-white text-base font-semibold p-2 border-b border-foreground bg-gray-800">{skill.title}</p>
+                        </div>
+                        <div className="p-2 text-foreground text-base font-normal">
+                            <ul>
+                                {
+                                    skill.skills.map((s, i) => (
+                                        <li key={i}> {s}</li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
                     </div>
                 ))
             }
