@@ -1,3 +1,7 @@
+type Props = {
+    views?: number;
+}
+
 const skills = [
     {
         title: 'Frontend',
@@ -25,11 +29,15 @@ const skills = [
     }
 ]
 
-export default function Skills() {
+export default function Skills({
+    views = skills.length
+}: Props) {
+    const visibleSkills = skills.slice(0, views);
+    
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 col-span-2 gap-4">
             {
-                skills.map((skill, index) => (
+                visibleSkills.map((skill, index) => (
                     <div className="border border-foreground my-auto min-w-80 sm:min-w-64 md:min-w-56" key={index}>
                         <div className="">
                             <p className="text-white text-base font-semibold p-2 border-b border-foreground bg-gray-800">{skill.title}</p>

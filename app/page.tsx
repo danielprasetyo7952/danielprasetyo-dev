@@ -41,7 +41,7 @@ export default function Home() {
             height={600}
             alt="Skills"
             className="hidden lg:inline-block lg:w-[500px] lg:h-auto" />
-          <Skills />
+          <Skills views={6} />
         </div>
       </section>
 
