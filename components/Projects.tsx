@@ -25,6 +25,13 @@ const projects = [
         image: "/project/forex-forecasting.png",
         repoLink: "https://github.com/danielprasetyo7952/Tugas-Akhir",
         liveLink: "https://tugas-akhir-preview.streamlit.app/"
+    },
+    {
+        title: "Savings and Loan Cooperative Website",
+        description: "A website for a savings and loan cooperative that allows members to view their account balance, make deposits, and apply for loans.",
+        image: "/project/savings-and-loan.png",
+        repoLink: "https://github.com/danielprasetyo7952/Project-RPL",
+        liveLink: ""
     }
 ]
 
