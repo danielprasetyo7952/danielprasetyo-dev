@@ -5,12 +5,12 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 {/* Components */ }
-import SocialProfiles from '@/components/SocialProfiles';
+import SocialProfiles from '@/components/ui/SocialProfiles';
 
 const navItems = [
   { name: 'Home', url: '/' },
-  { name: 'Project', url: '/project' },
   { name: 'About Me', url: '/about' },
+  { name: 'Project', url: '/project' },
   { name: 'Contact', url: '/contact' }
 ];
 

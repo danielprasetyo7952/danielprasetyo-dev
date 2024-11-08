@@ -12,7 +12,9 @@ export default function Summary() {
                     Daniel Budi Prasetyo, <span className="text-primary">Fullstack Developer</span> and <span className="text-primary">Machine Learning Developer</span>
                 </h2>
                 <p>
-                    I am passionate about building scalable web applications and exploring the latest advancements in machine learning. With a strong foundation in both frontend and backend technologies, I strive to create seamless and efficient user experiences. My journey in tech is driven by curiosity and a commitment to continuous learning.
+                    I am passionate about building scalable web applications and exploring the latest advancements in machine learning.
+                    With a strong foundation in both frontend and backend technologies, I strive to create seamless and efficient user experiences.
+                    My journey in tech is driven by curiosity and a commitment to continuous learning.
                 </p>
                 <div className="flex gap-4">
                     <Button>

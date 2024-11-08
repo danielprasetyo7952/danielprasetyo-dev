@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 {/*Component*/ }
-import SocialProfiles from "./SocialProfiles"
+import SocialProfiles from "./ui/SocialProfiles"
 
 export default function Footer() {
   return (

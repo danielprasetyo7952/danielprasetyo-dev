@@ -5,7 +5,7 @@ import "./globals.css";
 {/* Components */ }
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SocialProfiles from "@/components/SocialProfiles";
+import SocialProfiles from "@/components/ui/SocialProfiles";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
