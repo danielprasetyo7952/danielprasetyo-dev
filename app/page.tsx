@@ -8,7 +8,7 @@ import Quotes from "@/components/ui/Quotes";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Skills from "@/components/Skills";
 import Summary from "@/components/Summary";
-import Timeline from "@/components/Timeline";
+import Experiences from "@/components/Experiences";
 
 export default function Home() {
   return (
@@ -45,10 +45,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Experience */}
+      {/* Experiences */}
       <section>
         <SectionHeader title="Experience" />
-        <Timeline />
+        <Experiences />
       </section>
 
       {/* Contact */}
