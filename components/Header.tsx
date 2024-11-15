@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <>
       <nav className="bg-background fixed w-full z-20 top-0 start-0">
-        <div className="max-w-screen-xl 2xl:max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-lg xl:max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <Link href={"/"}><Image
               src="/logo.png"
@@ -76,7 +76,7 @@ export default function Header() {
                 navItems.map((item, index) => {
                   return (
                     <li key={index}>
-                      <Link href={item.url} className={`flex items-center p-2 hover:bg-gray-700 group ${item.url === pathname ? 'text-primary' : 'text-foreground'}`}>
+                      <Link href={item.url} className={`flex items-center p-2 hover:bg-gray-700 group ${item.url === pathname ? 'text-primary' : 'text-foreground'}`} onClick={handleDrawer}>
                         <span className="text-primary pr-4">\/</span>{item.name}
                       </Link>
                     </li>

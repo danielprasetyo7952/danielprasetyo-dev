@@ -6,7 +6,7 @@ import SocialProfiles from "./ui/SocialProfiles"
 export default function Footer() {
   return (
     <footer className="border-t">
-      <div className="max-w-screen-lg 2xl:max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 gap-8">
+      <div className="max-w-screen-lg xl:max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 gap-8">
         <div className="grid gap-2">
           <h5 className="text-md">
             <Image

@@ -31,7 +31,7 @@ export default function RootLayout({
           <div className="h-80 w-[1px] rounded-sm bg-white">
           </div>
         </div>
-        <main className="my-28 px-4 md:mx-auto max-w-screen-xl 2xl:max-w-screen-2xl flex flex-col justify-center gap-12">
+        <main className="my-28 px-4 md:mx-auto max-w-screen-lg xl:max-w-screen-xl flex flex-col justify-center gap-12">
           {children}
         </main>
         <Footer />
